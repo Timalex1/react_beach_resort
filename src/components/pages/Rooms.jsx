@@ -1,9 +1,13 @@
 import React from 'react';
+import Hero from "../shared/Hero";
+import Layout from "../shared/layout";
 
 const Rooms = () => {
-
     return (
-        <div>Hello, from the rooms page</div>
+        <Layout>
+            <Hero hero="roomsHero" />
+            <h1>Hey, rooms</h1>
+        </Layout>
     )
 }
 

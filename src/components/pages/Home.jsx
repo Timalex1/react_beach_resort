@@ -1,13 +1,12 @@
 import React from 'react';
 import Layout from "../shared/layout";
+import Hero from "../shared/Hero";
 
 const Home = () => {
 
     return (
         <Layout>
-
-            <div>Hello, from the home page</div>
-
+            <Hero hero="defaultHero" />
         </Layout>
     )
 }

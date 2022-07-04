@@ -1,7 +1,11 @@
 import React from 'react';
+import Hero from "../shared/Hero";
+import Layout from "../shared/layout";
 
 export default function Room (){
     return (
-        <div>Hello, from the error</div>
+        <Layout>
+            <Hero  />
+        </Layout>
     )
 }
