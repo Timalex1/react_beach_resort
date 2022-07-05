@@ -3,6 +3,8 @@ import Layout from "../shared/layout";
 import Hero from "../shared/Hero";
 import Banner from "../shared/Banner";
 import {Link} from "react-router-dom";
+import Services from "../shared/Services";
+import FeaturedRooms from "../FeaturedRooms";
 
 const Home = () => {
 
@@ -13,6 +15,8 @@ const Home = () => {
                     <Link to='/rooms' className='btn-primary'>Our rooms</Link>
                 </Banner>
             </Hero>
+            <Services />
+            <FeaturedRooms />
         </Layout>
     )
 }
