@@ -208,7 +208,8 @@ export default [
         "Soft, oversized bath towels",
         "Full-sized, pH-balanced toiletries",
         "Complimentary refreshments",
-        "Adequate safety/security",
+        "Adequate safety/security" +
+        "                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ",
         "Internet",
         "Comfortable beds"
       ],

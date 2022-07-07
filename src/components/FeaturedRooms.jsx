@@ -6,9 +6,9 @@ import Title from "./shared/Title";
 
 const FeaturedRooms = () => {
 
-    const {rooms, sortedRooms, featuredRooms, loading} = useContext(RoomContext);
+    const {featuredRooms, loading} = useContext(RoomContext);
 
-    const fRoomsList = featuredRooms.map(room => {
+    const rooms = featuredRooms.map(room => {
         return <Room key={room.id} room={room}/>
     })
 
@@ -16,7 +16,7 @@ const FeaturedRooms = () => {
         <section className="featured-rooms">
             <Title title="Featured rooms" />
             <div className="featured-rooms-center">
-                {loading ? <Loading /> : fRoomsList }
+                {loading ? <Loading /> : rooms }
             </div>
         </section>
     )

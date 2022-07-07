@@ -3,6 +3,7 @@ import Hero from "../shared/Hero";
 import Layout from "../shared/layout";
 import {Link} from "react-router-dom";
 import Banner from "../shared/Banner";
+import RoomsContainer from "../RoomsContainer";
 
 const Rooms = () => {
     return (
@@ -12,6 +13,7 @@ const Rooms = () => {
                     <Link to='/' className='btn-primary'>Return home</Link>
                 </Banner>
             </Hero>
+            <RoomsContainer />
         </Layout>
     )
 }

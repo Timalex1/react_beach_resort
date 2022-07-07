@@ -5,7 +5,7 @@ import {Link} from "react-router-dom";
 
 
 export default function NavBar() {
-    const [toggle, setToggle] = useState(true)
+    const [toggle, setToggle] = useState(false)
 
     const handleToggle = () => {
         setToggle(!toggle);

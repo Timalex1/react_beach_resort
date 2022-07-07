@@ -4,7 +4,7 @@ import {FaHiking, FaCocktail, FaShuttleVan, FaBeer } from "react-icons/fa";
 
 const Services = () => {
 
-    const [services, setServices] = useState([{
+    const [services] = useState([{
         icon: <FaCocktail />,
         title: "free cocktails",
         info: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est mollitia sit soluta! In\n" +
