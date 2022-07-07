@@ -83,7 +83,7 @@ const RoomsFilter = ({rooms}) => {
                     <div className="single-extra">
                         <input onChange={handleChange}
                                type="checkbox" name="breakfast"
-                               id="breakfast" checked={breakfast}/>
+                                id="breakfast" checked={breakfast}/>
                         <label htmlFor="breakfast">breakfast</label>
                     </div>
                     <div className="single-extra">
