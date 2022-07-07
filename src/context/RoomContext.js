@@ -26,9 +26,11 @@ class RoomContextProvider extends Component {
         try{
             //working with Contentful
             let response = await Client.getEntries({
-                content_type: "beachResort"
+                content_type: "beachResort",
+                order: "sys.createdAt"
             })
             console.log(response.items)
+
             let rooms = this.formatData(response.items)
             let featuredRooms = rooms.filter( room => room.featured === true)
             let maxPrice = Math.max(...rooms.map(item => item.price))
@@ -56,7 +58,7 @@ class RoomContextProvider extends Component {
 
 
     getRoom = (slug) => {
-        let tempRooms = [...this.rooms]
+        let tempRooms = [...this.state.rooms]
         const room = tempRooms.find(r => r.slug === slug)
         return room;
     }
@@ -69,6 +71,7 @@ class RoomContextProvider extends Component {
             return room
         })
 
+        console.log(tempItems)
         return tempItems
     }
 //

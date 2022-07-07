@@ -15,6 +15,7 @@ const SingleRoom = (props) => {
     const {slug} = useParams()
     const room = getRoom(slug)
 
+    // console.log(room)
 
     if (!room) {
         return (
